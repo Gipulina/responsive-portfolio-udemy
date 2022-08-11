@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+    color:rgba(29, 27, 41, 0.63);
+    background-color: #EEE;
+}
+.mob-wrapper{
+    display: none;
+}
+
+a{
+    color:rgba(29, 27, 41, 0.63);
+    text-decoration: none;
+
+}
+/* Global View  */
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin:0 auto;/* Centra y quita los márgenes  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:140px;
+    
+}
+
+.header-container{
+    background-color: grey;
+    min-height: 100px;
+    position:fixed;
+    width:100%;
+}
+.logo .bold {
+    font-weight: 700;
+    color:lightsteelblue;
+    font-size: 20px;
+
+}
+
+header{
+    max-width: 1024px;
+    /* background-color: aquamarine; */
+    min-height: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button{
+    padding: 10px 25px;
+    border: solid 1px;
+    margin-left: 20px;
+
+}
+.col{
+    background-color: rgb(231, 65, 36);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+.col p{
+    font-size: 0.875rem;
+    padding: 22px 25px;
+    line-height: 1.25rem;
+
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+.nav-button:hover{
+    color:rgb(231, 65, 36);
+    background-color: rgba(240, 255, 255, 0.132);
+    border: solid 2px rgba(29, 27, 41, 0.63);;
+}
+
+
+/* Tablet View */
+@media (max-width: 768px){
+    h1{
+        color:red;
+    }
+    .col{
+        width: 45%;
+    }
+    .hide-desktop-only{
+        display: block;
+    }
+    
+    header{
+        margin: 4%;
+        display: block;
+    }
+    .mob-nav{
+        display: none;
+        margin-top: 94px;
+
+    }
+    .container{
+        padding: 0;
+    }
+    nav{
+        display: none;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding: 10px;
+        margin: -5px;
+    }
+
+    .header-container{
+        position: relative;
+        padding-bottom: 1px;
+
+    }
+    .logo{
+            padding: 24px 23px;
+            margin-top: 23px;
+            margin-left: 25%;
+            position: absolute;
+        }
+
+    a .nav-button{
+        margin-left: 0;
+    }
+    .burgermenu{
+        float: left;
+        width: 30px;
+    }
+    .nav-bg-button{
+        display: block;
+        text-align: center;
+        margin: 10px 2px;
+        margin-left:-10px;
+        padding: 15px 30px;
+    }
+    
+    .nav-bg-button:hover{
+        color:rgb(231, 65, 36);
+        background-color: rgba(240, 255, 255, 0.132);
+        border: solid 2px rgba(29, 27, 41, 0.63);;
+    }
+}
+
+
+
+/* Mobile View */
+
+@media(max-width: 400px){
+    h1{
+        color: pink;
+    }
+    .col{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .logo{
+        margin-left: 8%;
+    }
+
+}
